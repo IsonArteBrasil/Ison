@@ -1,0 +1,326 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Exo', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #020202;
+    color: #cccccc;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Estilos para o Header*/
+
+.header {
+    width: 80%;
+    padding: 0px;
+    text-align: center;
+    top: 0px;
+    margin: 0 auto;
+    position: fixed;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(#131313, #000000, #22262b);
+    height: 4.3rem;
+    margin: 0 auto;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    width: 10%;
+    height: 4.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-equal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 1rem;
+    margin: 5px;
+    background-color: #ffffff;
+}
+
+.name {
+    width: 40%;
+    color: #ffffff;
+    font-size: 2em;
+    text-align: left;
+    font-weight: lighter;
+    margin: 19px 0px 0px -5px;
+}
+
+.name::first-letter {
+    color: #ff0000;
+}
+
+/* Estilos para a barra de navegação */
+.btn {
+    width: 50%;
+    display: flex;
+    margin-top: 27px;
+    overflow: hidden;
+    justify-content: space-evenly
+}
+
+.btn li {
+    display: inline;
+    text-align: center;
+    width: 20%;
+    margin: 2px;
+}
+
+.btn a {
+    font-weight: lighter;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.1s ease-in-out;
+    padding: 9px;
+}
+
+.btn a:hover {
+    text-decoration: none;
+    color: #8f9ea3;
+}
+
+/*Estilos para os Títulos h2*/
+.title {
+    font-size: x-large;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+/* Estilos para a seção de boas-vindas */
+#welcome-section {
+    text-align: justify;
+    padding: 10rem 10rem;
+    margin: 0 auto;
+    font-size: medium;
+    font-weight: 100;
+    word-spacing: 1px;
+    letter-spacing: 0.5px;
+}
+
+/* Estilos para a seção de projetos */
+.more {
+    text-decoration: none;
+    color: #ff0000;
+    transition: 1s ease-out;
+}
+
+.more:hover {
+    text-decoration: underline;
+    color: #8f9ea3;
+}
+
+#projects {
+    display: block;
+    padding: 5rem 10rem 10rem 10rem;
+}
+
+
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.service-container .project-tile {
+    width: calc(33.33% - 10px);
+    margin-bottom: 20px;
+    margin: 5px;
+}
+
+.service-container .project-tile .service-item-card {
+    border: 1px solid #000000;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    transition: 0.55s ease-in-out;
+    margin-bottom: 15px;
+}
+
+.service-container .project-tile .service-item-card:hover {
+    border: 1px solid #f00;
+}
+
+.service-container .project-tile .service-item-card .service-item-card-icon {
+    height: 40px;
+    width: 40px;
+    border: 1px solid #8f9ea3;
+    border-radius: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s ease;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.service-container .project-tile .service-item-card .service-item-card-icon:hover {
+    border: 1px solid #f00;
+}
+
+.service-container .project-tile .service-item-card .service-item-card-icon i {
+    font-size: 18px;
+    color: #9b043e;
+    transition: 0.50s ease-in-out;
+    padding: 10px;
+}
+
+.service-container .project-tile .service-item-card .service-item-card-icon i:hover {
+    color: #8f9ea3;
+}
+
+.service-container .project-tile .service-item-card .service-item-card-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.service-container .project-tile .service-item-card .service-item-card-description {
+    text-align: justify;
+    color: #ffffff;
+    font-weight: 100;
+    font-size: smaller;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos para a seção "Sobre" */
+#contact {
+    background: linear-gradient(#000000, #b19fad2d, #000000);
+    padding-top: 20px;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    border-top: 1px solid #f00000;
+    margin-top: 1px;
+}
+
+.contact-content p {
+    max-width: 550px;
+    margin: 30px auto;
+    line-height: 25px;
+    font-size: 14px;
+
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem 0 3rem 0;
+}
+
+.socials li {
+    margin: 0 5px;
+    transition: 0.3s ease-out;
+
+}
+
+.socials li:hover {
+    transform: translateY(8px);
+}
+
+.socials a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.50s ease;
+    padding: 10px;
+    font-weight: 200;
+
+
+}
+
+.socials a i {
+    font-size: 1rem;
+    color: #f00;
+    margin-right: 5px;
+
+}
+
+.socials a:hover {
+    color: #8f9ea3;
+
+}
+
+.footer {
+    width: 100vw;
+    padding: 20px 0;
+    background-color: #f3e2f3;
+    text-align: center;
+
+}
+
+.footer-bottom p {
+    font-weight: 400;
+    font-size: 0.8rem;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 20px
+}
+
+.footer-bottom a {
+    font-weight: 400;
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+    color: #ff0000;
+
+}
+
+
+/* Smartphones (600px para baixo) */
+@media only screen and (max-width: 600px) {}
+
+/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
+@media only screen and (min-width: 600px) {}
+
+/*Dispostivos Médios (Tablets deitados, 768px para cima) */
+@media only screen and (min-width: 768px) {}
+
+
+/* Dispostivos Largos (laptops/desktops, 992px para cima) */
+@media only screen and (min-width: 992px) {}
+
+/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
+@media only screen and (min-width: 1200px) {}
